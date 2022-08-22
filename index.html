@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backtracking</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <h1>Backtracking</h1>
+    <p>copyright &#169;2022 by David Matuzek</p>
+    <P>Backtracking is a form of recursion</p>
+    <p><b>Backtracking</b> is a technique based on algorithm to solve problem. It uses recursive calling to find the
+        solution by building a solution step by step increasing values with time.
+        It removes the solutions that doesn't give rise to the solution of the problem based on the <i>constraints</i>c
+        given to solve the problem.</p>
+
+    <p>Backtracking algorithm is applied to some specific types of problems,</p>
+    <ul type="square">
+        <li>Decision problem used to find a feasible solution of the problem.</li>
+        <li>Optimisation problem used to find the best solution that can be applied.</li>
+        <li>Enumeration problem used to find the set of all feasible solutions of the problem.</li>
+    </ul>
+
+    <p>In backtracking problem, the algorithm tries to find a sequence path to the solution which has some small
+        checkpoints from where the problem
+        can backtrack if no feasible solution is found for the problem.</p>
+
+    <p>Example,</p>
+
+    <center><img src="./backtracking.jpg" alt="Example"></center>
+
+    <h4>Difference between Recursion and Backtracking:</h4>
+
+    <p>n recursion, the function calls itself until it reaches a base case. In backtracking, we use recursion to explore
+        all
+        the possibilities until we get the best result for the problem.</p>
+
+    <h3>Pseudo Code for Backtracking : </h3>
+    <h5>1. Recursive backtracking solution. </h5>
+
+    <font size="3px" color="green">
+        <pre>
+        void findSolutions(n, other params) :
+        if (found a solution) :
+            solutionsFound = solutionsFound + 1;
+            displaySolution();
+            if (solutionsFound >= solutionTarget) : 
+                System.exit(0);
+            return
+    
+        for (val = first to last) :
+            if (isValid(val, n)) :
+                applyValue(val, n);
+                findSolutions(n+1, other params);
+                removeValue(val, n);
+    </pre>
+    </font>
+
+    <table border="1" align="center" cellpadding="4">
+
+        <thead>
+            <th>
+
+            </th>
+
+            <th bgcolor="grey">
+                2 by 2 map
+            </th>
+
+            <th bgcolor="grey">
+                3 by 3 map
+            </th>
+
+            <th bgcolor="grey">
+                3 by 4 map
+            </th>
+
+        <tbody>
+            <tr>
+                <td bgcolor="grey">
+                    method 1:
+                </td>
+
+                <td>
+                    60 ms.
+                </td>
+
+                <td>
+                    90 ms.
+                </td>
+
+                <td>
+                    120 ms.
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="grey">
+                    method 2:
+                </td>
+
+                <td>
+                    50 ms.
+                </td>
+
+                <td>
+                    40 ms.
+                </td>
+
+                <td>
+                    150 ms.
+                </td>
+            </tr>
+        </tbody>
+        </thead>
+
+    </table>
+
+    <h3>Another Table</h3>
+
+    <table border="1" align="center" cellpadding="4">
+        <tbody>
+            <tr>
+                <td>
+                    <img src="./blackball.webp" alt="blackball">
+                </td>
+
+                <td>
+                    <img src="./blackball.webp" alt="balckball">
+                </td>
+
+                <td>
+                    <img src="./witeball.webp" alt="whiteball">
+                </td>
+
+                <td>
+                    <img src="./blackball.webp" alt="blackball">
+                </td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+    <a href="contact.html">Please fill this form</a>
+
+
+</body>
+
+</html>

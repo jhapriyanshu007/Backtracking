@@ -1,0 +1,14 @@
+body{
+
+    margin: 0;
+}
+
+h1{
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: grey;
+    width: 100000px;
+    height: 100px;
+  
+}
